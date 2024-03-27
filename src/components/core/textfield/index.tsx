@@ -68,7 +68,7 @@ export interface MdOutlinedTextFieldElement extends _MdOutlinedTextField {}
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdFilledTextField } from 'material-web-react'
+ * import { MdFilledTextField } from 'react-material-web'
  *
  * const FilledTextField = () => (
  *    <MdFilledTextField label="Filled Text Field" />
@@ -139,7 +139,7 @@ export const MdFilledTextField = createComponent({
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdOutlinedTextField } from 'material-web-react'
+ * import { MdOutlinedTextField } from 'react-material-web'
  *
  * const OutlinedTextField = () => (
  *   <MdOutlinedTextField label="Outlined Text Field" />

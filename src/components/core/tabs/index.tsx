@@ -47,7 +47,7 @@ export interface MdSecondaryTabElement extends _MdSecondaryTab {}
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdTabs, MdPrimaryTab } from 'material-web-react'
+ * import { MdTabs, MdPrimaryTab } from 'react-material-web'
  *
  * function TabsExample() {
  *   return (

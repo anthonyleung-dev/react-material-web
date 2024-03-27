@@ -37,7 +37,7 @@ export interface MdSwitchElement extends _MdSwitch {}
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdSwitch } from 'material-web-react'
+ * import { MdSwitch } from 'react-material-web'
  *
  * function SwitchExample() {
  *    return <MdSwitch selected />

@@ -52,7 +52,7 @@ export type MdSuggestionChipProps = ComponentProps<typeof MdSuggestionChip>
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdChipSet, MdAssistChip } from 'material-web-react'
+ * import { MdChipSet, MdAssistChip } from 'react-material-web'
  *
  * export const MdChipSetDemo = () => {
  *    return (

@@ -1,7 +1,63 @@
+@import 'material-symbols';
+@import '~@fontsource/roboto';
+
 label {
     display: inline-flex;
     place-items: center;
     gap: 8px;
     font-family: Roboto, system-ui;
     color: var(--md-sys-color-on-background, #000);
+}
+
+.material-symbols-rounded {
+    font-family: 'Material Symbols Rounded';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-sharp {
+    font-family: 'Material Symbols Sharp';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+md-icon[filled] {
+    font-variation-settings: 'FILL' 1;
+}
+
+md-icon.rounded {
+    --md-icon-font: 'Material Symbols Rounded';
+}
+md-icon.sharp {
+    --md-icon-font: 'Material Symbols Sharp';
+}
+
+md-elevation {
+    --md-elevation-level: 1;
+}
+
+md-focus-ring {
+    --md-focus-ring-shape: 0px;
+    --md-focus-ring-width: 2px;
+    --md-focus-ring-active-width: 4px;
 }

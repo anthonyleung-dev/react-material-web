@@ -20,7 +20,7 @@ export type MdLinearProgressProps = ComponentProps<typeof MdLinearProgress>
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdCircularProgress } from 'material-web-react'
+ * import { MdCircularProgress } from 'react-material-web'
  *
  * export const CircularProgressExample = () => {
  *     return <MdCircularProgress value={0.5} max={1} />
@@ -47,7 +47,7 @@ export const MdCircularProgress = createComponent({
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdLinearProgress } from 'material-web-react'
+ * import { MdLinearProgress } from 'react-material-web'
  *
  * export const LinearProgressExample = () => {
  *    return <MdLinearProgress value={0.5} max={1} />

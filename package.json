@@ -1,52 +1,65 @@
 {
-  "name": "material-web-react",
-  "version": "0.1.0",
-  "description": "A simple react components using material web",
-  "main": "dist/bundle.js",
-  "scripts": {
-    "build": "webpack --mode=production",
-    "start": "webpack serve --open",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "keywords": [
-    "material 3",
-    "material you",
-    "react"
-  ],
-  "author": "Anthony Leung",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/preset-env": "^7.24.3",
-    "@babel/preset-react": "^7.24.1",
-    "@chromatic-com/storybook": "^1.2.25",
-    "@storybook/addon-essentials": "^8.0.4",
-    "@storybook/addon-interactions": "^8.0.4",
-    "@storybook/addon-links": "^8.0.4",
-    "@storybook/addon-onboarding": "^8.0.4",
-    "@storybook/blocks": "^8.0.4",
-    "@storybook/react": "^8.0.4",
-    "@storybook/react-webpack5": "^8.0.4",
-    "@storybook/test": "^8.0.4",
-    "@types/react-dom": "^18.2.22",
-    "babel-loader": "^9.1.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sass": "^1.72.0",
-    "sass-loader": "^14.1.1",
-    "storybook": "^8.0.4",
-    "tsconfig-paths-webpack-plugin": "^4.1.0",
-    "typescript": "^5.4.3",
-    "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4"
-  },
-  "dependencies": {
-    "@fontsource/roboto": "^5.0.12",
-    "@lit/react": "^1.0.4",
-    "@material/web": "^1.4.0",
-    "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
-    "material-symbols": "^0.17.1"
-  }
+    "name": "react-material-web",
+    "version": "1.0.0",
+    "description": "A React Material components using material web and lit/react",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        "./styles": "./dist/styles.css",
+        ".": "./dist/index.js"
+    },
+    "scripts": {
+        "clean": "rimraf dist/",
+        "copy-files": "copyfiles -u 1 src/**/*.html src/**/*.css dist/",
+        "build": "npm run clean && tsc && npm run copy-files",
+        "start": "webpack serve --open",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build"
+    },
+    "keywords": [
+        "material 3",
+        "material you",
+        "material web",
+        "react material component",
+        "material design",
+        "react"
+    ],
+    "author": "Anthony Leung",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/preset-env": "^7.24.3",
+        "@babel/preset-react": "^7.24.1",
+        "@chromatic-com/storybook": "^1.2.25",
+        "@storybook/addon-essentials": "^8.0.4",
+        "@storybook/addon-interactions": "^8.0.4",
+        "@storybook/addon-links": "^8.0.4",
+        "@storybook/addon-onboarding": "^8.0.4",
+        "@storybook/blocks": "^8.0.4",
+        "@storybook/react": "^8.0.4",
+        "@storybook/react-webpack5": "^8.0.4",
+        "@storybook/test": "^8.0.4",
+        "@types/react-dom": "^18.2.22",
+        "babel-loader": "^9.1.3",
+        "copyfiles": "^2.4.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "rimraf": "^5.0.5",
+        "sass": "^1.72.0",
+        "sass-loader": "^14.1.1",
+        "storybook": "^8.0.4",
+        "ts-loader": "^9.5.1",
+        "tsconfig-paths-webpack-plugin": "^4.1.0",
+        "typescript": "^5.4.3",
+        "webpack": "^5.91.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.0.4"
+    },
+    "dependencies": {
+        "@fontsource/roboto": "^5.0.12",
+        "@lit/react": "^1.0.4",
+        "@material/web": "^1.4.0",
+        "@storybook/addon-webpack5-compiler-swc": "^1.0.2",
+        "material-symbols": "^0.17.1"
+    }
 }

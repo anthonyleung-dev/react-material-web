@@ -31,7 +31,7 @@ export interface MdDialogElement extends _MdDialog {}
  * @example
  * ``` tsx
  * import React, { useState } from 'react'
- * import { MdDialog, MdDialogElement, MdFilledButton, MdTextButton } from 'material-web-react'
+ * import { MdDialog, MdDialogElement, MdFilledButton, MdTextButton } from 'react-material-web'
  *
  * export const Detault = () => {
  *  const [open, setOpen] = useState(false)
@@ -52,7 +52,7 @@ export interface MdDialogElement extends _MdDialog {}
  * @example
  * ``` tsx
  * import React, { useState } from 'react'
- * import { MdDialog, MdDialogElement, MdFilledButton, MdTextButton } from 'material-web-react'
+ * import { MdDialog, MdDialogElement, MdFilledButton, MdTextButton } from 'react-material-web'
  *
  * export const Detault = () => {
  *     const ref = useRef<MdDialogElement>(null)

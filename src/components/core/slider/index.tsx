@@ -43,7 +43,7 @@ export interface MdSliderElement extends _MdSlider {}
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdSlider } from 'material-web-react'
+ * import { MdSlider } from 'react-material-web'
  *
  * const Slider = () => {
  *   return (

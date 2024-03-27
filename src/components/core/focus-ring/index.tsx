@@ -1,7 +1,6 @@
 import { createComponent } from '@lit/react'
 import React, { ComponentProps } from 'react'
 import { MdFocusRing as _MdFocusRing } from '@material/web/focus/md-focus-ring'
-import './styles.css'
 
 /**
  * Props for the `MdFocusRing` component.
@@ -29,7 +28,7 @@ export interface MdFocusRingElement extends _MdFocusRing {}
  * @example
  * ``` tsx
  * import React, { useRef } from 'react'
- * import { MdFocusRing } from 'material-web-react'
+ * import { MdFocusRing } from 'react-material-web'
  * 
  * export const Detault = () => {
  *  return (

@@ -1,16 +1,17 @@
 const path = require('path')
 
 module.exports = {
-    entry: './src/index.tsx',
+    context: path.resolve(__dirname, 'src'),
+    entry: './index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
+        library: 'react-material-web',
         libraryTarget: 'umd',
-        library: 'MyReactLibrary',
         umdNamedDefine: true,
+        globalObject: 'this',
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.js', '.jsx'],
+        extensions: ['.tsx', '.ts', '.js', '.jsx', '.css'],
     },
     module: {
         rules: [
@@ -18,7 +19,7 @@ module.exports = {
                 test: /\.(ts|tsx)$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader',
+                    loader: 'ts-loader',
                 },
             },
             {

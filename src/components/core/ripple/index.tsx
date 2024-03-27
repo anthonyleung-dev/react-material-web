@@ -28,7 +28,7 @@ export interface MdRippleElement extends _MdRipple {}
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdRipple } from 'material-web-react'
+ * import { MdRipple } from 'react-material-web'
  *
  * export const RippleExample = () => {
  * return (

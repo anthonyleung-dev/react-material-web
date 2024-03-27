@@ -1,7 +1,6 @@
 import { createComponent } from '@lit/react'
 import { MdIcon as _MdIcon } from '@material/web/icon/icon.js'
 import React, { ComponentProps } from 'react'
-import './styles.css'
 
 export type MdIconProps = ComponentProps<typeof MdIcon>
 

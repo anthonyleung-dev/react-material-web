@@ -54,7 +54,7 @@ export interface MdSubMenuElement extends _MdSubMenu {}
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdMenu, MdMenuItem, MdFilledButton } from 'material-web-react'
+ * import { MdMenu, MdMenuItem, MdFilledButton } from 'react-material-web'
  * 
  * export const MenuExample = () => {
  *      const menuRef = React.useRef<MdMenuElement>(null)

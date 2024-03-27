@@ -71,7 +71,7 @@ export interface MdSelectOptionElement extends _MdSelectOption {}
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdFilledSelect, MdSelectOption } from 'material-web-react'
+ * import { MdFilledSelect, MdSelectOption } from 'react-material-web'
  *
  * export const FilledSelectExample = () => {
  *    return (
@@ -133,7 +133,7 @@ export const MdFilledSelect = createComponent({
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdOutlinedSelect, MdSelectOption } from 'material-web-react'
+ * import { MdOutlinedSelect, MdSelectOption } from 'react-material-web'
  *
  * export const OutlinedSelectExample = () => {
  *   return (

@@ -31,7 +31,7 @@ export interface MdOutlinedSegmentedButtonSetElement extends _MdOutlinedSegmente
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdOutlinedSegmentedButton, MdOutlinedSegmentedButtonSet } from 'material-web-react'
+ * import { MdOutlinedSegmentedButton, MdOutlinedSegmentedButtonSet } from 'react-material-web'
  *
  * const App = () => {
  *    return <MdOutlinedSegmentedButtonSet multiselect>

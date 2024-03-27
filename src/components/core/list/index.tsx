@@ -34,7 +34,7 @@ export interface MdListItemElement extends _MdListItem {}
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdList, MdListItem } from 'material-web-react'
+ * import { MdList, MdListItem } from 'react-material-web'
  *
  * export const List = () => (
  *    <MdList>

@@ -1,7 +1,6 @@
 import { createComponent } from '@lit/react'
 import React, { ComponentProps } from 'react'
 import { MdElevation as _MdElevation } from '@material/web/elevation/elevation'
-import './styles.css'
 /**
  * Props for the `MdElevation` component.
  * This interface is used to provide the props for the `MdElevation` component.
@@ -18,7 +17,7 @@ export interface MdElevationElement extends _MdElevation {}
  * @example
  * ``` tsx
  * import React from 'react'
- * import { MdElevation } from 'material-web-react'
+ * import { MdElevation } from 'react-material-web'
  *
  * export const Detault = () => (
  *   <div style={{ width: '64px', height: '64px', position: 'relative', borderRadius: '16px' }}>

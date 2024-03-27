@@ -24,7 +24,7 @@ export interface MdRadioElement extends _MdRadio {}
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdRadio } from 'material-web-react'
+ * import { MdRadio } from 'react-material-web'
  *
  * export const RadioExample = () => {
  *  return (

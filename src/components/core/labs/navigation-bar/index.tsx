@@ -34,7 +34,7 @@ export interface MdNavigationTabElement extends _MdNavigationTab {}
  * @example
  * ```tsx
  * import React from 'react'
- * import { MdNavigationBar, MdNavigationTab } from 'material-web-react'
+ * import { MdNavigationBar, MdNavigationTab } from 'react-material-web'
  *
  * const App = () => {
  *    return <MdNavigationBar>
