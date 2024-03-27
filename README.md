@@ -42,6 +42,18 @@ function Example() {
 
 For more detailed documentation on each component and its API, please refer to [Material Components Web](https://github.com/material-components/material-web).
 
+## Storybook
+
+You can also check out our Storybook to see all the components in action. To run the Storybook, use the following command:
+
+```bash
+npm run storybook
+```
+
+or
+
+[Storybook](https://react-material-web.netlify.app)
+
 ## Available Components
 
 ### Base
