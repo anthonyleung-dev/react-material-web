@@ -19,5 +19,6 @@
         "outDir": "./dist"
     },
     "include": ["src"],
-    "exclude": ["node_modules", "build", "dist"]
+    // exclude storybook files
+    "exclude": ["node_modules", "build", "dist", "src/stories", "src/**/*.stories.ts", "src/**/*.stories.tsx"]
 }
