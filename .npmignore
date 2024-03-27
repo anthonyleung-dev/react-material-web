@@ -1,0 +1,55 @@
+# Dependency directories
+node_modules/
+
+# Production build folder
+/build
+
+# Source maps
+*.map
+
+# TypeScript declaration maps
+*.map.ts
+
+# Source TS files
+/src
+
+# Test files
+__tests__/
+*.test.js
+*.test.jsx
+*.test.ts
+*.test.tsx
+*.spec.js
+*.spec.jsx
+*.spec.ts
+*.spec.tsx
+
+# Storybook files
+.storybook/
+*.stories.js
+*.stories.jsx
+*.stories.ts
+*.stories.tsx
+
+# Configuration files
+/.babelrc
+/.eslintrc
+/.prettierrc
+/.eslintignore
+/.prettierignore
+/.npmrc
+/.nvmrc
+/.gitignore
+/.gitattributes
+/package-lock.json
+/yarn.lock
+
+# Dotfiles except .npmrc
+/.*
+
+# Misc
+/coverage/
+/docs/
+/examples/
+/Dockerfile
+/docker-compose.yml
