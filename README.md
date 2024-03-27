@@ -61,9 +61,11 @@ For more detailed documentation on each component and its API, please refer to [
 - [x] Tabs
 - [x] Text field
 
-### Labs
-- [ ] Card
-- [ ] Segmented button
+### Labs 🚧
+> WARNING ⚠️ This folder contains experimental features that are not recommended for production.
+- [x] Card
+- [x] Segmented button
+- [x] Navigation bar
 
 
 ## License

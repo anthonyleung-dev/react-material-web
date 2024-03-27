@@ -33,3 +33,10 @@
 md-icon[filled] {
     font-variation-settings: 'FILL' 1;
 }
+
+md-icon.rounded {
+    --md-icon-font: 'Material Symbols Rounded';
+}
+md-icon.sharp {
+    --md-icon-font: 'Material Symbols Sharp';
+}
