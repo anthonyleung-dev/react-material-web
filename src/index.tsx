@@ -4,4 +4,6 @@ import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import 'material-symbols'
 
-export * from './components'
+import './styles.css'
+
+export * from './components/core'

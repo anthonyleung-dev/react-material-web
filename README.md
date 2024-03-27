@@ -46,25 +46,24 @@ For more detailed documentation on each component and its API, please refer to [
 - [x] Icon button
 - [x] Checkbox
 - [x] Chips
-- [ ] Dialog
+- [x] Dialog
 - [x] Divider
-- [ ] Elevation
-- [ ] Focus ring
-- [ ] List
-- [ ] Menu
-- [ ] Progress indicators
-- [ ] Radio
-- [ ] Ripple
-- [ ] Select
-- [ ] Slider
-- [ ] Switch
-- [ ] Tabs
-- [ ] Text field
+- [x] Elevation
+- [x] Focus ring
+- [x] List
+- [x] Menu
+- [x] Progress indicators
+- [x] Radio
+- [x] Ripple
+- [x] Select
+- [x] Slider
+- [x] Switch
+- [x] Tabs
+- [x] Text field
 
 ### Labs
 - [ ] Card
 - [ ] Segmented button
-- [ ] Segmented button set
 
 
 ## License
