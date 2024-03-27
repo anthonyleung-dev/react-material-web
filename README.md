@@ -41,7 +41,7 @@ For more detailed documentation on each component and its API, please refer to [
 
 ### Base
 - [x] Button
-- [ ] FAB
+- [x] FAB
 - [x] Icon
 - [x] Icon button
 - [x] Checkbox
