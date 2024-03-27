@@ -45,32 +45,32 @@ For more detailed documentation on each component and its API, please refer to [
 ## Available Components
 
 ### Base
-- [x] Button
-- [x] FAB
-- [x] Icon
-- [x] Icon button
-- [x] Checkbox
-- [x] Chips
-- [x] Dialog
-- [x] Divider
-- [x] Elevation
-- [x] Focus ring
-- [x] List
-- [x] Menu
-- [x] Progress indicators
-- [x] Radio
-- [x] Ripple
-- [x] Select
-- [x] Slider
-- [x] Switch
-- [x] Tabs
-- [x] Text field
+- ✅ Button
+- ✅ FAB
+- ✅ Icon
+- ✅ Icon button
+- ✅ Checkbox
+- ✅ Chips
+- ✅ Dialog
+- ✅ Divider
+- ✅ Elevation
+- ✅ Focus ring
+- ✅ List
+- ✅ Menu
+- ✅ Progress indicators
+- ✅ Radio
+- ✅ Ripple
+- ✅ Select
+- ✅ Slider
+- ✅ Switch
+- ✅ Tabs
+- ✅ Text field
 
 ### Labs 🚧
 > WARNING ⚠️ This folder contains experimental features that are not recommended for production.
-- [x] Card
-- [x] Segmented button
-- [x] Navigation bar
+- ✅ Card
+- ✅ Segmented button
+- ✅ Navigation bar
 
 ## Core Dependencies
 

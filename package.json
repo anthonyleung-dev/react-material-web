@@ -1,6 +1,6 @@
 {
     "name": "react-material-web",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "A React Material components using material web and lit/react",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -16,6 +16,10 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/anthonyleung-dev/material-web-react.git"
     },
     "keywords": [
         "material 3",
