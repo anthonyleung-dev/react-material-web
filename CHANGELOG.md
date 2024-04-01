@@ -10,7 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.7] - 2024-04-01
 
 ### Fixed
-- Fixed the @fontsource/roboto css import issue in vite bundler.
+- Fixed the `@fontsource/roboto` CSS import issue in Vite bundler.
+- Add `storybook-static` in `.npmignore`
 
 ## [1.0.6] - 2024-04-01
 
