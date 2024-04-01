@@ -1,4 +1,4 @@
-# Material Web React Components
+# React Material Web Components
 
 This library provides a set of React components styled with Material Design, leveraging the capabilities of `@material/web` and `@lit/react`.
 

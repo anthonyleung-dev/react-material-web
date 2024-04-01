@@ -80,6 +80,11 @@ export const MdFilledTextField = createComponent({
     react: React,
     tagName: 'md-filled-text-field',
     elementClass: _MdFilledTextField,
+    events: {
+        onChange: 'change',
+        onSelect: 'select',
+        onInput: 'input',
+    },
 })
 
 /**
@@ -150,4 +155,9 @@ export const MdOutlinedTextField = createComponent({
     react: React,
     tagName: 'md-outlined-text-field',
     elementClass: _MdOutlinedTextField,
+    events: {
+        onChange: 'change',
+        onSelect: 'select',
+        onInput: 'input',
+    },
 })
