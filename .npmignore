@@ -53,3 +53,5 @@ __tests__/
 /examples/
 /Dockerfile
 /docker-compose.yml
+
+/storybook-static/
