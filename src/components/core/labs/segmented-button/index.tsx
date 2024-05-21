@@ -1,3 +1,5 @@
+'use client'
+
 import React, { ComponentProps } from 'react'
 import { createComponent } from '@lit/react'
 import { MdOutlinedSegmentedButton as _MdOutlinedSegmentedButton } from '@material/web/labs/segmentedbutton/outlined-segmented-button.js'

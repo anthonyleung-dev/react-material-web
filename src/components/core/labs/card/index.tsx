@@ -1,3 +1,5 @@
+'use client'
+
 import React, { ComponentProps } from 'react'
 import { createComponent } from '@lit/react'
 import { MdFilledCard as _MdFilledCard } from '@material/web/labs/card/filled-card.js'

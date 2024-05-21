@@ -1,3 +1,5 @@
+'use client'
+
 import { createComponent } from '@lit/react'
 import React, { ComponentProps } from 'react'
 import { MdRadio as _MdRadio } from '@material/web/radio/radio.js'

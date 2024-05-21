@@ -1,3 +1,5 @@
+'use client'
+
 import { createComponent } from '@lit/react'
 import React, { ComponentProps } from 'react'
 import { MdCircularProgress as _MdCircularProgress } from '@material/web/progress/circular-progress.js'

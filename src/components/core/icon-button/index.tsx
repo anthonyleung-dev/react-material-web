@@ -1,3 +1,5 @@
+'use client'
+
 import { MdIconButton as _MdIconButton } from '@material/web/iconbutton/icon-button.js'
 import { MdFilledIconButton as _MdFilledIconButton } from '@material/web/iconbutton/filled-icon-button.js'
 import { MdOutlinedIconButton as _MdOutlinedIconButton } from '@material/web/iconbutton/outlined-icon-button.js'

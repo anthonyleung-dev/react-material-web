@@ -1,3 +1,5 @@
+'use client'
+
 import { createComponent } from '@lit/react'
 import React, { ComponentProps } from 'react'
 import { FabSize, MdFab as _MdFab } from '@material/web/fab/fab.js'

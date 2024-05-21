@@ -1,3 +1,5 @@
+'use client'
+
 import { createComponent } from '@lit/react'
 import React, { ComponentProps } from 'react'
 import { MdDialog as _MdDialog } from '@material/web/dialog/dialog.js'

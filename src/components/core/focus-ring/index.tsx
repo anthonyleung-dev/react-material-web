@@ -1,3 +1,5 @@
+'use client'
+
 import { createComponent } from '@lit/react'
 import React, { ComponentProps } from 'react'
 import { MdFocusRing as _MdFocusRing } from '@material/web/focus/md-focus-ring'

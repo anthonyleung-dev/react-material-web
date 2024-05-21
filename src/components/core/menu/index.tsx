@@ -1,3 +1,5 @@
+'use client'
+
 import { createComponent } from '@lit/react'
 import React, { ComponentProps } from 'react'
 import { MdMenu as _MdMenu } from '@material/web/menu/menu.js'

@@ -1,3 +1,5 @@
+'use client'
+
 import React, { ComponentProps } from 'react'
 import { createComponent } from '@lit/react'
 import { MdList as _MdList } from '@material/web/list/list'

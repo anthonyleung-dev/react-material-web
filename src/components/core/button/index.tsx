@@ -1,3 +1,5 @@
+'use client'
+
 import { createComponent } from '@lit/react'
 import React, { ComponentProps, ReactNode } from 'react'
 import { MdFilledButton as _MdFilledButton } from '@material/web/button/filled-button.js'

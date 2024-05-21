@@ -1,3 +1,5 @@
+'use client'
+
 import { createComponent } from '@lit/react'
 import React, { ComponentProps } from 'react'
 import { MdAssistChip as _MdAssistChip } from '@material/web/chips/assist-chip'

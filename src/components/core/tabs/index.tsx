@@ -1,3 +1,5 @@
+'use client'
+
 import React, { ComponentProps } from 'react'
 import { createComponent } from '@lit/react'
 import { MdTabs as _MdTabs } from '@material/web/tabs/tabs.js'
