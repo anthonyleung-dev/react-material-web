@@ -1,3 +1,5 @@
+'use client'
+
 import { createComponent } from '@lit/react'
 import React, { ComponentProps } from 'react'
 import { MdCheckbox as _MdCheckbox } from '@material/web/checkbox/checkbox.js'

@@ -1,3 +1,5 @@
+'use client'
+
 import React, { ComponentProps } from 'react'
 import { createComponent } from '@lit/react'
 import { MdNavigationBar as _MdNavigationBar } from '@material/web/labs/navigationbar/navigation-bar.js'

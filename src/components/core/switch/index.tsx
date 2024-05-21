@@ -1,3 +1,5 @@
+'use client'
+
 import { createComponent } from '@lit/react'
 import React, { ComponentProps } from 'react'
 import { MdSwitch as _MdSwitch } from '@material/web/switch/switch.js'

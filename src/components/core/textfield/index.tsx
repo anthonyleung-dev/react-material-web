@@ -1,3 +1,5 @@
+'use client'
+
 import React, { ComponentProps } from 'react'
 import { createComponent } from '@lit/react'
 import { MdFilledTextField as _MdFilledTextField } from '@material/web/textfield/filled-text-field.js'
