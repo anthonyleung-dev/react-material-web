@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.10] - 2024-05-31
+
+### Changed
+- Updated the `@material/web` package to `1.5.0`
+
+### Fixed
+- Added missing elements to some components([#6](https://github.com/anthonyleung-dev/react-material-web/pull/6) Thanks to [zZHorizonZz](https://github.com/zZHorizonZz))
+
 ## [1.0.9] - 2024-05-21
 
 ### Changed
