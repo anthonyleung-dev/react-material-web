@@ -6,6 +6,8 @@ import React, { ComponentProps } from 'react'
 
 export type MdIconProps = ComponentProps<typeof MdIcon>
 
+export interface MdIconElement extends _MdIcon {}
+
 export const MdIcon = createComponent({
     react: React,
     tagName: 'md-icon',

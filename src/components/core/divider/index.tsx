@@ -11,6 +11,8 @@ import { MdDivider as _MdDivider } from '@material/web/divider/divider.js'
  */
 export type MdDividerProps = ComponentProps<typeof MdDivider>
 
+export interface MdDividerElement extends _MdDivider {}
+
 /**
  * Material Design Divider component.
  * This component is a React wrapper around the `md-divider` custom element.

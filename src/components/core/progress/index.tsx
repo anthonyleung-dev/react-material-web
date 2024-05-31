@@ -9,6 +9,10 @@ export type MdCircularProgressProps = ComponentProps<typeof MdCircularProgress>
 
 export type MdLinearProgressProps = ComponentProps<typeof MdLinearProgress>
 
+export interface MdCircularProgressElement extends _MdCircularProgress {}
+
+export interface MdLinearProgressElement extends _MdLinearProgress {}
+
 /**
  * Material Design Circular Progress component.
  * This component is a React wrapper around the `md-circular-progress` custom element.
