@@ -4,14 +4,14 @@ import { createComponent } from '@lit/react'
 import React, { ComponentProps } from 'react'
 import { MdCheckbox as _MdCheckbox } from '@material/web/checkbox/checkbox.js'
 
-export interface MdCheckboxElement extends _MdCheckbox {}
-
 /**
  * Props for the `MdCheckbox` component.
  * This interface is used to provide the props for the `MdCheckbox` component.
  *
  */
 export type MdCheckboxProps = ComponentProps<typeof MdCheckbox>
+
+export interface MdCheckboxElement extends _MdCheckbox {}
 
 /**
  * Material Design Checkbox component.

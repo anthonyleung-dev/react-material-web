@@ -44,6 +44,16 @@ export type MdInputChipProps = ComponentProps<typeof MdInputChip>
  */
 export type MdSuggestionChipProps = ComponentProps<typeof MdSuggestionChip>
 
+export interface MdAssistChipElement extends _MdAssistChip {}
+
+export interface MdChipSetElement extends _MdChipSet {}
+
+export interface MdFilterChipElement extends _MdFilterChip {}
+
+export interface MdInputChipElement extends _MdInputChip {}
+
+export interface MdSuggestionChipElement extends _MdSuggestionChip {}
+
 /**
  * Material Design Chip Set component.
  * This component is a React wrapper around the `md-chip-set` custom element.

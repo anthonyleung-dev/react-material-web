@@ -35,6 +35,14 @@ export type MdOutlinedIconButtonProps = ComponentProps<typeof MdOutlinedIconButt
  */
 export type MdFilledTonalIconButtonProps = ComponentProps<typeof MdFilledTonalIconButton>
 
+export interface MdIconButtonElement extends _MdIconButton {}
+
+export interface MdFilledIconButtonElement extends _MdFilledIconButton {}
+
+export interface MdOutlinedIconButtonElement extends _MdOutlinedIconButton {}
+
+export interface MdFilledTonalIconButtonElement extends _MdFilledTonalIconButton {}
+
 /**
  * Material Design Icon Button component.
  * This component is a React wrapper around the `md-icon-button` custom element.
