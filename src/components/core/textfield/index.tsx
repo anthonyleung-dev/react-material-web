@@ -55,6 +55,7 @@ export interface MdOutlinedTextFieldElement extends _MdOutlinedTextField {}
  * @param {number} valueAsNumber - The text field's value as a number.
  * @param {Date} valueAsDate - The text field's value as a date.
  * @param {boolean} willValidate - Whether or not the text field will be validated.
+ * @param {boolean} noAsterisk - Disables the asterisk on the floating label, when the text field is required.
  *
  * Methods:
  * - `checkValidity(): boolean` - Checks the text field's native validation and returns whether or not the element is valid.
@@ -131,6 +132,7 @@ export const MdFilledTextField = createComponent({
  * @param {number} valueAsNumber - The text field's value as a number.
  * @param {Date} valueAsDate - The text field's value as a date.
  * @param {boolean} willValidate - Whether or not the text field will be validated.
+ * @param {boolean} noAsterisk - Disables the asterisk on the floating label, when the text field is required.
  *
  * Methods:
  * - `checkValidity(): boolean` - Checks the text field's native validation and returns whether or not the element is valid.

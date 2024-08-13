@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2024-08-13
+
+### Changed
+- Updated the `@material/web` package to `2.0.0`
+- Removed the CSS import in `src/index.tsx`, Now the CSS import is optional.
+
 ## [1.0.10] - 2024-05-31
 
 ### Changed

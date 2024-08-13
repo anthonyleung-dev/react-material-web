@@ -65,6 +65,7 @@ export interface MdElevatedButtonElement extends _MdElevatedButton {}
  * @param {string} target - Where to display the linked `href` URL for a link button. Common options include `_blank` to open in a new tab.
  * @param {boolean} trailingIcon - Whether to render the icon at the inline end of the label rather than the inline start.
  * @param {boolean} hasIcon - Whether to display the icon or not.
+ * @param {string} softDisabled - Whether or not the button is "soft-disabled" (disabled but still focusable). https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
  * @param {string} type - The default behavior of the button. May be "text", "reset", or "submit" (default).
  * @param {string} value - The value added to a form with the button's name when the button submits a form.
  * @param {string} name - The name of the button.
@@ -92,6 +93,7 @@ export const MdOutlinedButton = createComponent({
  * @param {string} target - Where to display the linked `href` URL for a link button. Common options include `_blank` to open in a new tab.
  * @param {boolean} trailingIcon - Whether to render the icon at the inline end of the label rather than the inline start.
  * @param {boolean} hasIcon - Whether to display the icon or not.
+ * @param {string} softDisabled - Whether or not the button is "soft-disabled" (disabled but still focusable). https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
  * @param {string} type - The default behavior of the button. May be "text", "reset", or "submit" (default).
  * @param {string} value - The value added to a form with the button's name when the button submits a form.
  * @param {string} name - The name of the button.
@@ -119,6 +121,7 @@ export const MdFilledButton = createComponent({
  * @param {string} target - Where to display the linked `href` URL for a link button. Common options include `_blank` to open in a new tab.
  * @param {boolean} trailingIcon - Whether to render the icon at the inline end of the label rather than the inline start.
  * @param {boolean} hasIcon - Whether to display the icon or not.
+ * @param {string} softDisabled - Whether or not the button is "soft-disabled" (disabled but still focusable). https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
  * @param {string} type - The default behavior of the button. May be "text", "reset", or "submit" (default).
  * @param {string} value - The value added to a form with the button's name when the button submits a form.
  * @param {string} name - The name of the button.
@@ -146,6 +149,7 @@ export const MdTextButton = createComponent({
  * @param {string} href - The URL that the link button points to.
  * @param {string} target - Where to display the linked `href` URL for a link button. Common options include `_blank` to open in a new tab.
  * @param {boolean} trailingIcon - Whether to render the icon at the inline end of the label rather than the inline start.
+ * @param {string} softDisabled - Whether or not the button is "soft-disabled" (disabled but still focusable). https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
  * @param {boolean} hasIcon - Whether to display the icon or not.
  * @param {string} type - The default behavior of the button. May be "text", "reset", or "submit" (default).
  * @param {string} value - The value added to a form with the button's name when the button submits a form.
@@ -173,6 +177,7 @@ export const MdFilledTonalButton = createComponent({
  * @param {string} href - The URL that the link button points to.
  * @param {string} target - Where to display the linked `href` URL for a link button. Common options include `_blank` to open in a new tab.
  * @param {boolean} trailingIcon - Whether to render the icon at the inline end of the label rather than the inline start.
+ * @param {string} softDisabled - Whether or not the button is "soft-disabled" (disabled but still focusable). https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
  * @param {boolean} hasIcon - Whether to display the icon or not.
  * @param {string} type - The default behavior of the button. May be "text", "reset", or "submit" (default).
  * @param {string} value - The value added to a form with the button's name when the button submits a form.

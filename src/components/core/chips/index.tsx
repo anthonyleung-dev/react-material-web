@@ -89,9 +89,10 @@ export const MdChipSet = createComponent({
  * @param {boolean} elevated - Whether or not the chip is elevated.
  * @param {boolean} removable - Whether or not the chip is removable.
  * @param {boolean} selected - Whether or not the chip is selected.
+ * @param {string} softDisabled - Whether or not the button is "soft-disabled" (disabled but still focusable). https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
  * @param {boolean} disabled - Whether or not the chip is disabled. Disabled chips are not focusable, unless always-focusable is set.
- * @param {boolean} alwaysFocusable - When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
- * @param {string} label - The label of the chip.
+ * @param {boolean} alwaysFocusable - (Deprecated: Use `softDisabled` instead of `alwaysFocusable` + `disabled`.) When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
+ * @param {string} label - (Deprecated: Set text as content of the chip instead.) The label of the chip.
  * @param {() => void} handleTrailingActionFocus - Callback for when the trailing action is focused.
  * @param {string} ariaLabelRemove - Aria label for the remove button.
  */
@@ -112,9 +113,10 @@ export const MdFilterChip = createComponent({
  * @param {string} target - The target of the link.(e.g. _blank, _self, _parent, _top
  * @param {boolean} removeOnly - Whether or not the chip is remove only.
  * @param {boolean} selected - Whether or not the chip is selected.
+ * @param {string} softDisabled - Whether or not the button is "soft-disabled" (disabled but still focusable). https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
  * @param {boolean} disabled - Whether or not the chip is disabled. Disabled chips are not focusable, unless always-focusable is set.
- * @param {boolean} alwaysFocusable - When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
- * @param {string} label - The label of the chip.
+ * @param {boolean} alwaysFocusable - (Deprecated: Use `softDisabled` instead of `alwaysFocusable` + `disabled`.) When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
+ * @param {string} label - (Deprecated: Set text as content of the chip instead.) The label of the chip.
  * @param {() => void} handleTrailingActionFocus - Callback for when the trailing action is focused.
  * @param {string} ariaLabelRemove - Aria label for the remove button.
  */
@@ -133,8 +135,9 @@ export const MdInputChip = createComponent({
  * @param {string} href - The URL that the chip links to.
  * @param {string} target - The target of the link.(e.g. _blank, _self, _parent, _top
  * @param {boolean} disabled - Whether or not the chip is disabled. Disabled chips are not focusable, unless always-focusable is set.
- * @param {boolean} alwaysFocusable - When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
- * @param {string} label - The label of the chip.
+ * @param {string} softDisabled - Whether or not the button is "soft-disabled" (disabled but still focusable). https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
+ * @param {boolean} alwaysFocusable - (Deprecated: Use `softDisabled` instead of `alwaysFocusable` + `disabled`.) When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
+ * @param {string} label - (Deprecated: Set text as content of the chip instead.) The label of the chip.
  */
 export const MdSuggestionChip = createComponent({
     react: React,
@@ -151,8 +154,9 @@ export const MdSuggestionChip = createComponent({
  * @param {string} href - The URL that the chip links to.
  * @param {string} target - The target of the link.(e.g. _blank, _self, _parent, _top
  * @param {boolean} disabled - Whether or not the chip is disabled. Disabled chips are not focusable, unless always-focusable is set.
- * @param {boolean} alwaysFocusable - When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
- * @param {string} label - The label of the chip.
+ * @param {string} softDisabled - Whether or not the button is "soft-disabled" (disabled but still focusable). https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
+ * @param {boolean} alwaysFocusable - (Deprecated: Use `softDisabled` instead of `alwaysFocusable` + `disabled`.) When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
+ * @param {string} label - (Deprecated: Set text as content of the chip instead.) The label of the chip.
  */
 export const MdAssistChip = createComponent({
     react: React,

@@ -20,10 +20,13 @@ yarn add react-material-web
 
 Here's a quick example to get you started. After installing, you can import and use Material Components like any other React component.
 
+We default to using the `@fontsource/roboto` and `material-symbols` in styles, if you want to use them, you can import them in your project:
 Add styles to your project:
 ```tsx
 import 'react-material-web/styles'
 ```
+
+Or you can use the components without default styles.
 
 Then, you can use the components like this:
 
