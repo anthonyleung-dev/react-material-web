@@ -50,15 +50,6 @@ const meta = {
             description:
                 'When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.',
         },
-        label: {
-            control: 'text',
-            description: 'The label of the chip.',
-            defaultValue: '',
-        },
-        ariaLabelRemove: {
-            control: 'text',
-            description: 'Aria label for the remove button.',
-        },
     },
     // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
     args: {
@@ -71,14 +62,11 @@ type Story = StoryObj<typeof meta>
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Detault: Story = {
-    args: {
-        label: 'Input Chip',
-    },
+    args: {},
 }
 
 export const WithAvatar: Story = {
     args: {
-        label: 'Input Chip with Avatar',
         avatar: true,
         disabled: false,
     },
@@ -86,6 +74,7 @@ export const WithAvatar: Story = {
         <MdChipSet>
             <MdInputChip {...args}>
                 <img slot="icon" src="https://lh3.googleusercontent.com/a/default-user=s48" />
+                Input Chip with Avatar
             </MdInputChip>
         </MdChipSet>
     ),

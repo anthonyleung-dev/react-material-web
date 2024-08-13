@@ -60,6 +60,7 @@ export interface MdFilledTonalIconButtonElement extends _MdFilledTonalIconButton
  * @param {string} name - The name of the button.
  * @param {HTMLFormElement} form - The form element that the button is associated with.
  * @param {NodeList} labels - A NodeList of label elements that are associated with the button.
+ * @param {string} softDisabled - Whether or not the button is "soft-disabled" (disabled but still focusable). https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
  * @param {() => Promise<void> | void} onClick - The event handler for the `click` event.
  * @param {() => Promise<void> | void} onFocus - The event handler for the `focus` event.
  * @param {() => Promise<void> | void} onBlur - The event handler for the `blur` event.
@@ -89,6 +90,7 @@ export const MdIconButton = createComponent({
  * @param {string} name - The name of the button.
  * @param {HTMLFormElement} form - The form element that the button is associated with.
  * @param {NodeList} labels - A NodeList of label elements that are associated with the button.
+ * @param {string} softDisabled - Whether or not the button is "soft-disabled" (disabled but still focusable). https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
  * @param {() => Promise<void> | void} onClick - The event handler for the `click` event.
  * @param {() => Promise<void> | void} onFocus - The event handler for the `focus` event.
  * @param {() => Promise<void> | void} onBlur - The event handler for the `blur` event.
@@ -118,6 +120,7 @@ export const MdFilledIconButton = createComponent({
  * @param {string} name - The name of the button.
  * @param {HTMLFormElement} form - The form element that the button is associated with.
  * @param {NodeList} labels - A NodeList of label elements that are associated with the button.
+ * @param {string} softDisabled - Whether or not the button is "soft-disabled" (disabled but still focusable). https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
  * @param {() => Promise<void> | void} onClick - The event handler for the `click` event.
  * @param {() => Promise<void> | void} onFocus - The event handler for the `focus` event.
  * @param {() => Promise<void> | void} onBlur - The event handler for the `blur` event.
@@ -147,6 +150,7 @@ export const MdOutlinedIconButton = createComponent({
  * @param {string} name - The name of the button.
  * @param {HTMLFormElement} form - The form element that the button is associated with.
  * @param {NodeList} labels - A NodeList of label elements that are associated with the button.
+ * @param {string} softDisabled - Whether or not the button is "soft-disabled" (disabled but still focusable). https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.
  * @param {() => Promise<void> | void} onClick - The event handler for the `click` event.
  * @param {() => Promise<void> | void} onFocus - The event handler for the `focus` event.
  * @param {() => Promise<void> | void} onBlur - The event handler for the `blur` event.

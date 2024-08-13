@@ -35,17 +35,6 @@ const meta = {
             description:
                 'Whether or not the chip is disabled. Disabled chips are not focusable, unless always-focusable is set.',
         },
-        alwaysFocusable: {
-            control: 'boolean',
-            defaultValue: false,
-            description:
-                'When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.',
-        },
-        label: {
-            control: 'text',
-            description: 'The label of the chip.',
-            defaultValue: '',
-        },
     },
     // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
     args: {},
@@ -56,18 +45,15 @@ type Story = StoryObj<typeof meta>
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Detault: Story = {
-    args: {
-        label: 'Assist Chip',
-    },
+    args: {},
+    render: (props) => <MdAssistChip {...props}>Assist Chip</MdAssistChip>,
 }
 
 export const WithIcon: Story = {
-    args: {
-        label: 'Assist Chip with Icon',
-    },
     render: (props) => (
         <MdAssistChip {...props}>
             <MdIcon slot="icon">local_laundry_service</MdIcon>
+            Assist Chip
         </MdAssistChip>
     ),
 }

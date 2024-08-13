@@ -1,3 +1,5 @@
+import React from 'react'
+
 import type { Meta, StoryObj } from '@storybook/react'
 import { MdFilterChip, MdFilterChipProps } from '..'
 
@@ -34,17 +36,6 @@ const meta = {
             description:
                 'Whether or not the chip is disabled. Disabled chips are not focusable, unless always-focusable is set.',
         },
-        alwaysFocusable: {
-            control: 'boolean',
-            defaultValue: false,
-            description:
-                'When true, allow disabled chips to be focused with arrow keys. Add this when a chip needs increased visibility when disabled. See https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/#kbd_disabled_controls for more guidance on when this is needed.',
-        },
-        label: {
-            control: 'text',
-            description: 'The label of the chip.',
-            defaultValue: '',
-        },
         ariaLabelRemove: {
             control: 'text',
             description: 'Aria label for the remove button.',
@@ -59,7 +50,6 @@ type Story = StoryObj<typeof meta>
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Detault: Story = {
-    args: {
-        label: 'Filter Chip',
-    },
+    args: {},
+    render: ({ ...args }) => <MdFilterChip {...args}>Filter Chip</MdFilterChip>,
 }
