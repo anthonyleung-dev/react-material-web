@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.2.0] - 2024-10-02
+
+### Added
+- Added `Badge` component.
+
+### Changed
+- Updated the `@material/web` package to `2.2.0`
+
 ## [2.0.0] - 2024-08-13
 
 ### Changed
