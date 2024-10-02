@@ -65,9 +65,9 @@
         "webpack-dev-server": "^5.0.4"
     },
     "dependencies": {
-        "@fontsource/roboto": "^5.0.12",
-        "@lit/react": "^1.0.4",
-        "@material/web": "^2.0.0",
-        "material-symbols": "^0.17.4"
+        "@fontsource/roboto": "^5.1.0",
+        "@lit/react": "^1.0.5",
+        "@material/web": "^2.2.0",
+        "material-symbols": "^0.24.0"
     }
 }
