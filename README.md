@@ -83,6 +83,7 @@ or
 
 ### Labs 🚧
 > WARNING ⚠️ This folder contains experimental features that are not recommended for production.
+- ✅ Badge
 - ✅ Card
 - ✅ Segmented button
 - ✅ Navigation bar

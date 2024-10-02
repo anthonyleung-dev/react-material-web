@@ -19,6 +19,7 @@ export * from './switch'
 export * from './tabs'
 export * from './textfield'
 
+export * from './labs/badge'
 export * from './labs/card'
 export * from './labs/segmented-button'
 export * from './labs/navigation-bar'
