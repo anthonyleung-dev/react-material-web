@@ -66,7 +66,7 @@
     },
     "dependencies": {
         "@fontsource/roboto": "^5.1.0",
-        "@lit/react": "^1.0.5",
+        "@lit/react": "^1.0.6",
         "@material/web": "^2.2.0",
         "material-symbols": "^0.24.0"
     }
