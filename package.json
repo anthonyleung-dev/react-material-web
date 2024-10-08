@@ -1,6 +1,6 @@
 {
     "name": "react-material-web",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "A React Material components using material web and lit/react",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
