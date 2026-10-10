@@ -88,6 +88,155 @@ or
 - ✅ Segmented button
 - ✅ Navigation bar
 
+### Labs: expressive components 🚧
+
+> Only using the components above? Skip this section. The package root needs no new setup.
+
+> WARNING ⚠️ These components come from `@material/web/labs/gb`, added in `@material/web` 2.5. They are experimental. Their API can change in a minor release.
+
+They have their own entry point. The expressive Badge and Card differ from the Labs Badge and Card above.
+
+```tsx
+import { MdGbButton, MdGbIcon } from 'react-material-web/labs/gb'
+```
+
+- ✅ Badge (`MdGbBadge`)
+- ✅ Button (`MdGbButton`)
+- ✅ Card (`MdGbCard`)
+- ✅ Checkbox (`MdGbCheckbox`)
+- ✅ Divider (`MdGbDivider`)
+- ✅ FAB (`MdGbFab`)
+- ✅ Icon (`MdGbIcon`)
+- ✅ Icon button (`MdGbIconButton`)
+- ✅ List (`MdGbList`, `MdGbListItem`)
+- ✅ Menu (`MdGbMenu`, `MdGbMenuGroup`, `MdGbMenuItem`)
+- ✅ Radio (`MdGbRadio`)
+- ✅ Split button (`MdGbSplitButton`)
+- ✅ Switch (`MdGbSwitch`)
+
+#### Required setup
+
+1. **Load the M3 system stylesheet once.** The expressive components read their color, shape, type and motion tokens from it.
+
+    ```tsx
+    import '@material/web/labs/gb/styles/m3.css'
+    ```
+
+    It uses `light-dark()` colors, so it follows the user's color scheme. With pnpm, add `@material/web` as a direct dependency so this import resolves.
+
+2. **Add the bundler rule.** Upstream loads its styles as CSS module scripts. Most bundlers cannot load them. The rule rewrites each style import to the `.cssresult.js` file next to it. Get the rule from `react-material-web/labs/gb/bundler`. This entry is for bundler config files only. Do not import it in app code.
+
+    **Vite 8**
+
+    ```js
+    // vite.config.js
+    import { defineConfig } from 'vite'
+    import react from '@vitejs/plugin-react'
+    import { materialGbVite } from 'react-material-web/labs/gb/bundler'
+
+    export default defineConfig({
+        plugins: [materialGbVite(), react()],
+        // The dev dependency optimizer has its own plugin list.
+        optimizeDeps: { rolldownOptions: { plugins: [materialGbVite()] } },
+        // Only for SSR builds and Vitest: bundle these packages so the plugin runs on them.
+        ssr: { noExternal: ['react-material-web', '@material/web'] },
+    })
+    ```
+
+    On Vite 7, replace the `optimizeDeps` line with `optimizeDeps: { exclude: ['react-material-web', '@material/web'] }`. Vite 7 pre-bundles with esbuild, which does not run this plugin.
+
+    **webpack 5**
+
+    ```js
+    // webpack.config.js
+    const { materialGbWebpackRule } = require('react-material-web/labs/gb/bundler')
+
+    module.exports = {
+        // ...
+        module: {
+            rules: [
+                // ...your rules
+                materialGbWebpackRule(),
+            ],
+        },
+    }
+    ```
+
+    **Next.js 15.5 and 16**
+
+    Next.js 16 uses Turbopack by default; the `webpack` key covers `next build --webpack`. Next.js 15.5 uses webpack by default; the `turbopack` key covers `--turbopack`. Next.js 15.2 and older ignore the `turbopack` key, so Turbopack builds fail there.
+
+    ```js
+    // next.config.mjs
+    import { materialGbTurbopackRules, materialGbWebpackRule } from 'react-material-web/labs/gb/bundler'
+
+    export default {
+        turbopack: { rules: materialGbTurbopackRules() },
+        webpack: (config) => {
+            config.module.rules.push(materialGbWebpackRule())
+            return config
+        },
+    }
+    ```
+
+    Without the rule, you see one of these errors:
+
+    | Bundler | Symptom |
+    | --- | --- |
+    | Vite | `does not provide an export named 'default'` for a `.css` file in dev, or `"default" is not exported by ...css` at build time |
+    | Vitest | `Unknown file extension ".css"` |
+    | webpack, with a CSS loader rule | The build passes. The components render empty. The browser console shows `Cannot read properties of undefined (reading 'styleSheet')` |
+    | webpack, without a CSS loader rule | `Module parse failed: Unexpected character '@'` in a gb `.css` file |
+    | Next.js (Turbopack) | `non-ecmascript placeable asset ... has no ECMAScript exports` |
+
+3. **Load an icon font for `MdGbIcon`.** It uses the font named by the `--md-icon-font` custom property. This library already depends on [`material-symbols`](https://github.com/marella/material-symbols):
+
+    ```tsx
+    import 'material-symbols/outlined.css'
+    ```
+
+    ```css
+    :root {
+        --md-icon-font: 'Material Symbols Outlined';
+    }
+    ```
+
+    `import 'react-material-web/styles'` loads all `material-symbols` fonts too.
+
+A first component after these steps:
+
+```tsx
+import '@material/web/labs/gb/styles/m3.css'
+import 'material-symbols/outlined.css'
+import { MdGbButton, MdGbIcon } from 'react-material-web/labs/gb'
+
+export function Save() {
+    return (
+        <MdGbButton color="filled" size="md">
+            <MdGbIcon>save</MdGbIcon>
+            Save
+        </MdGbButton>
+    )
+}
+```
+
+The menu is a native popover. Open it from a button that points at the menu `id`. On React 19, use the `popoverTarget` prop:
+
+```tsx
+<>
+    <button popoverTarget="menu">Open</button>
+    <MdGbMenu id="menu">
+        <MdGbMenuItem>Item</MdGbMenuItem>
+    </MdGbMenu>
+</>
+```
+
+React 18 has no `popoverTarget` prop. Pass the HTML attribute instead: `<button {...{ popovertarget: 'menu' }}>Open</button>`.
+
+In jsdom (for example Vitest), form-associated components need an `ElementInternals` polyfill such as `element-internals-polyfill`. This applies to the stable components too.
+
+Tested with Vite 7 and 8, Vitest 5 with jsdom, webpack 5, Next.js 15.5 and 16, and React 18 and 19.
+
 ## Core Dependencies
 
 Our library is built upon the solid foundation of Material Design and modern web technologies, including:

@@ -52,6 +52,7 @@ export interface MdFilledTonalIconButtonElement extends _MdFilledTonalIconButton
  * @param {boolean} flipIconInRtl - Flips the icon if in an RTL context at startup.
  * @param {string} href - Sets the underlying HTMLAnchorElement's href attribute.
  * @param {string} target - Sets the target attribute for the HTMLAnchorElement to define where to open the linked document.
+ * @param {string} download - The filename to use when downloading the linked resource. Link icon buttons only.
  * @param {string} ariaLabelSelected - The aria-label of the button when it is toggleable and selected.
  * @param {boolean} toggle - When true, the button will toggle between selected and unselected states.
  * @param {boolean} selected - Sets the selected state. When false, displays the default icon; when true, displays the "selected" icon.
@@ -82,6 +83,7 @@ export const MdIconButton = createComponent({
  * @param {boolean} flipIconInRtl - Flips the icon if in an RTL context at startup.
  * @param {string} href - Sets the underlying HTMLAnchorElement's href attribute.
  * @param {string} target - Sets the target attribute for the HTMLAnchorElement to define where to open the linked document.
+ * @param {string} download - The filename to use when downloading the linked resource. Link icon buttons only.
  * @param {string} ariaLabelSelected - The aria-label of the button when it is toggleable and selected.
  * @param {boolean} toggle - When true, the button will toggle between selected and unselected states.
  * @param {boolean} selected - Sets the selected state. When false, displays the default icon; when true, displays the "selected" icon.
@@ -112,6 +114,7 @@ export const MdFilledIconButton = createComponent({
  * @param {boolean} flipIconInRtl - Flips the icon if in an RTL context at startup.
  * @param {string} href - Sets the underlying HTMLAnchorElement's href attribute.
  * @param {string} target - Sets the target attribute for the HTMLAnchorElement to define where to open the linked document.
+ * @param {string} download - The filename to use when downloading the linked resource. Link icon buttons only.
  * @param {string} ariaLabelSelected - The aria-label of the button when it is toggleable and selected.
  * @param {boolean} toggle - When true, the button will toggle between selected and unselected states.
  * @param {boolean} selected - Sets the selected state. When false, displays the default icon; when true, displays the "selected" icon.
@@ -142,6 +145,7 @@ export const MdOutlinedIconButton = createComponent({
  * @param {boolean} flipIconInRtl - Flips the icon if in an RTL context at startup.
  * @param {string} href - Sets the underlying HTMLAnchorElement's href attribute.
  * @param {string} target - Sets the target attribute for the HTMLAnchorElement to define where to open the linked document.
+ * @param {string} download - The filename to use when downloading the linked resource. Link icon buttons only.
  * @param {string} ariaLabelSelected - The aria-label of the button when it is toggleable and selected.
  * @param {boolean} toggle - When true, the button will toggle between selected and unselected states.
  * @param {boolean} selected - Sets the selected state. When false, displays the default icon; when true, displays the "selected" icon.
