@@ -1,5 +1,14 @@
 # React Material Web Components
 
+[![npm version](https://img.shields.io/npm/v/react-material-web.svg)](https://www.npmjs.com/package/react-material-web)
+[![npm downloads](https://img.shields.io/npm/dm/react-material-web.svg)](https://www.npmjs.com/package/react-material-web)
+[![CI](https://github.com/anthonyleung-dev/react-material-web/actions/workflows/ci.yml/badge.svg)](https://github.com/anthonyleung-dev/react-material-web/actions/workflows/ci.yml)
+[![license](https://img.shields.io/npm/l/react-material-web.svg)](LICENSE)
+
+- npm: [react-material-web](https://www.npmjs.com/package/react-material-web)
+- Source: [anthonyleung-dev/react-material-web](https://github.com/anthonyleung-dev/react-material-web)
+- Changelog: [CHANGELOG.md](CHANGELOG.md)
+
 This library provides a set of React components styled with Material Design, leveraging the capabilities of `@material/web` and `@lit/react`.
 
 ## Installation
@@ -246,6 +255,23 @@ Our library is built upon the solid foundation of Material Design and modern web
 - **[@fontsource/roboto](https://github.com/fontsource/font-files/tree/main/fonts/google/roboto):** The default Material Design font.
 - **[material-symbols](https://github.com/marella/material-symbols):** For Material Design icons and symbols.
 
+
+## Releasing
+
+GitHub Actions publishes to npm. Each release has npm provenance.
+
+1. Set `version` in `package.json` and add the entry to `CHANGELOG.md`. Merge to `main`.
+2. Tag that commit with the same version, without a `v`, and push the tag:
+
+   ```bash
+   git tag 2.5.0
+   git push origin 2.5.0
+   ```
+
+3. The `Publish` workflow runs the tests and the builds, checks that the tag equals the `package.json` version, and publishes.
+   A prerelease version such as `2.6.0-beta.1` goes to the `next` dist-tag.
+
+The workflow uses npm trusted publishing (OIDC), so the repo stores no npm token.
 
 ## License
 

@@ -1,0 +1,41 @@
+name: Publish
+
+# Push a tag equal to package.json "version" (for example `2.5.0`) to publish it to npm.
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+*'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    uses: ./.github/workflows/ci.yml
+
+  publish:
+    needs: verify
+    runs-on: ubuntu-latest
+    environment: npm
+    permissions:
+      contents: read
+      # npm trusted publishing: npm trades this OIDC token for a short-lived publish token and adds provenance.
+      id-token: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/setup
+      - name: Check tag matches package.json version
+        run: |
+          version="$(node -p "require('./package.json').version")"
+          if [ "$GITHUB_REF_NAME" != "$version" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match package.json version $version"
+            exit 1
+          fi
+      - name: Publish
+        # The prepublishOnly script builds dist/ first.
+        run: |
+          # A prerelease version such as 2.6.0-beta.1 goes to the "next" dist-tag, not "latest".
+          case "$GITHUB_REF_NAME" in
+            *-*) npm publish --tag next ;;
+            *)   npm publish ;;
+          esac

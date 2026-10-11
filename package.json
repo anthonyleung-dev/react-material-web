@@ -30,11 +30,16 @@
         "start": "webpack serve --open",
         "test": "node --test bundler/gb.test.cjs",
         "storybook": "storybook dev -p 6006",
-        "build-storybook": "storybook build"
+        "build-storybook": "storybook build",
+        "prepublishOnly": "npm run build"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/anthonyleung-dev/material-web-react.git"
+        "url": "git+https://github.com/anthonyleung-dev/react-material-web.git"
+    },
+    "homepage": "https://github.com/anthonyleung-dev/react-material-web#readme",
+    "bugs": {
+        "url": "https://github.com/anthonyleung-dev/react-material-web/issues"
     },
     "keywords": [
         "material 3",
@@ -84,5 +89,9 @@
         "@lit/react": "^1.0.6",
         "@material/web": "^2.5.0",
         "material-symbols": "^0.24.0"
+    },
+    "publishConfig": {
+        "access": "public",
+        "provenance": true
     }
 }
