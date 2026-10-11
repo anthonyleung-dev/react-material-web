@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/react-webpack5'
+import { materialGbWebpackRule } from '../bundler/gb.cjs'
 
 const config: StorybookConfig = {
     stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -16,6 +17,12 @@ const config: StorybookConfig = {
     },
     docs: {
         autodocs: 'tag',
+    },
+    // `@material/web/labs/gb` loads its styles as CSS module scripts; use the same rule the README gives users.
+    webpackFinal: async (webpackConfig) => {
+        webpackConfig.module = webpackConfig.module ?? {}
+        webpackConfig.module.rules = [...(webpackConfig.module.rules ?? []), materialGbWebpackRule()]
+        return webpackConfig
     },
 }
 export default config

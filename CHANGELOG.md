@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.5.0] - 2026-10-10
+
+### Added
+
+-   Experimental `MdGb*` components from `@material/web/labs/gb`: Badge, Button, Card, Checkbox, Divider, Fab,
+    Icon, IconButton, List, ListItem, Menu, MenuGroup, MenuItem, Radio, SplitButton and Switch.
+-   The `react-material-web/labs/gb` entry point for them. They need a bundler rule; stable components need no new setup. See the README.
+-   `react-material-web/labs/gb/bundler`. It holds the Vite, webpack and Next.js (Turbopack) rules.
+
+### Changed
+
+-   Updated `@material/web` from `2.2.0` to `2.5.0`.
+-   Documented the `download` prop that `@material/web` 2.3 added to link buttons, icon buttons and assist chips.
+
 ## [2.2.1] - 2024-10-08
 
 ### Fixed

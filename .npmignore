@@ -16,6 +16,7 @@ node_modules/
 # Test files
 __tests__/
 *.test.js
+*.test.cjs
 *.test.jsx
 *.test.ts
 *.test.tsx
