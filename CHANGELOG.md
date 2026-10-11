@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+-   Fixed the `repository` URL in `package.json` and added `homepage` and `bugs`.
+-   GitHub Actions now runs the tests and builds on every pull request, and publishes to npm with provenance when a version tag is pushed.
+
 ## [2.5.0] - 2026-10-10
 
 ### Added

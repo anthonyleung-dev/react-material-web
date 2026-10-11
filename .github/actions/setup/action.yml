@@ -1,0 +1,13 @@
+name: Setup
+description: Install Node and the locked dependencies. Every workflow uses this after checkout.
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v5
+      with:
+        # Node 24 ships npm 11, which npm trusted publishing (OIDC) needs.
+        node-version: 24
+        cache: npm
+        registry-url: https://registry.npmjs.org
+    - run: npm ci
+      shell: bash
